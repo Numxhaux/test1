@@ -1,0 +1,25 @@
+{
+    "scripts": [
+      { "title": "Dark Hub", "description": "Explorer useful for Script Devs", "author": "unknown", "imageURL": "https://i.ytimg.com/vi/OsNwjgTtVGI/maxresdefault.jpg", "scriptURLRaw": "https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init" },
+      { "title": "Solaris Hub", "description": "OP Hub For PetSimX", "author": "Wumat#8877", "imageURL": "https://i.ytimg.com/vi/BayeBEituS8/maxresdefault.jpg", "scriptURLRaw": "https://solarishub.dev/script.lua" },
+      { "title": "CMDX", "description": "admin console script", "author": "cmdx team", "imageURL": "https://media.discordapp.net/attachments/872862464142868530/888614866812817448/Screenshot_20210918-080753_Edge.jpg", "scriptURLRaw": "https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source" },
+      {
+        "title": "Owl Hub",
+        "description": "The OG Hub [Discontinued but works for some games]",
+        "author": "unknown",
+        "imageURL": "https://media.discordapp.net/attachments/872862464142868530/888247211945771068/maxresdefault.jpg",
+        "scriptURLRaw": "https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"
+      },
+      { "title": "Infinite Yield", "description": "One of the best, if not the best FE script.", "author": "Infinite Yield Team", "imageURL": "https://cdn.discordapp.com/attachments/874705502704128060/892022429822615572/f3658200-3abc-11ea-973a-b024e3a60673.png", "scriptURLRaw": "https://pastebin.com/raw/cPxGx27V" },
+      { "title": "Gui Renimate", "description": "Best Script Reanimate", "author": "Neru Team", "imageURL": "https://cdn.discordapp.com/attachments/1046288655561523243/1053924601404604437/a.png", "scriptURLRaw": "https://pastebin.com/raw/hAejmJfu" },
+      { "title": "DomainX", "description": "100+ Games, Good Performance,  Incredible UI and much more", "author": "Shlex", "imageURL": "https://media.discordapp.net/attachments/872654761017618484/893483107892723752/Screenshot_20211001-183245_Edge.jpg", "scriptURLRaw": "https://shlex.dev/release/domainx/latest.lua" },
+      { "title": "Domain Hub", "description": "Domain Hub is the best fe hub", "author": "Shlex", "imageURL": "https://media.discordapp.net/attachments/872862464142868530/888620692818522173/dTCVxAl.png", "scriptURLRaw": "https://raw.githubusercontent.com/shlexsoftworks/Domain/main/source" },
+      {
+        "title": "Mukuro Blox Fruits",
+        "description": "ok",
+        "author": "SirWeeb",
+        "imageURL": "https://i.ytimg.com/vi/nRTkzlUJL50/maxresdefault.jpg",
+        "scriptURLRaw": "https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua"
+      }
+    ]
+  }
