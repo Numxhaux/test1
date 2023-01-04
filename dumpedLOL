@@ -1,0 +1,898 @@
+--[=[
+  Dumped
+]=]
+
+-- Instances: 39 | Scripts: 5 | Modules: 0
+local G2L = {};
+
+-- StarterGui.SirhurtGUI
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[SirhurtGUI]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+-- StarterGui.SirhurtGUI.mainFrame
+G2L["2"] = Instance.new("ImageLabel", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["SliceCenter"] = Rect.new(20, 20, 480, 480);
+G2L["2"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["ImageColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["2"]["Image"] = [[http://www.roblox.com/asset/?id=4530318781]];
+G2L["2"]["Size"] = UDim2.new(0, 467, 0, 270);
+G2L["2"]["ClipsDescendants"] = true;
+G2L["2"]["Name"] = [[mainFrame]];
+G2L["2"]["BackgroundTransparency"] = 1;
+G2L["2"]["Position"] = UDim2.new(0, 353, 0, 364);
+
+-- StarterGui.SirhurtGUI.mainFrame.topBarFrame
+G2L["3"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["SliceCenter"] = Rect.new(20, 20, 480, 480);
+G2L["3"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["ImageColor3"] = Color3.fromRGB(50, 50, 50);
+G2L["3"]["Image"] = [[http://www.roblox.com/asset/?id=4530319192]];
+G2L["3"]["Size"] = UDim2.new(1, 0, 0, 27);
+G2L["3"]["Name"] = [[topBarFrame]];
+G2L["3"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.SirhurtGUI.mainFrame.topBarFrame.exitBtn
+G2L["4"] = Instance.new("ImageButton", G2L["3"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 97, 93);
+G2L["4"]["ImageColor3"] = Color3.fromRGB(255, 97, 93);
+G2L["4"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["4"]["Image"] = [[http://www.roblox.com/asset/?id=4132450915]];
+G2L["4"]["Size"] = UDim2.new(0, 10, 0, 10);
+G2L["4"]["Name"] = [[exitBtn]];
+G2L["4"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["4"]["Position"] = UDim2.new(0, 450, 0.5, 0);
+G2L["4"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.SirhurtGUI.mainFrame.topBarFrame.miniBtn
+G2L["5"] = Instance.new("ImageButton", G2L["3"]);
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 217, 74);
+G2L["5"]["ImageColor3"] = Color3.fromRGB(255, 217, 74);
+G2L["5"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["5"]["Image"] = [[http://www.roblox.com/asset/?id=4132450915]];
+G2L["5"]["Size"] = UDim2.new(0, 10, 0, 10);
+G2L["5"]["Name"] = [[miniBtn]];
+G2L["5"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["5"]["Position"] = UDim2.new(0, 433, 0.5, 0);
+G2L["5"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.SirhurtGUI.mainFrame.topBarFrame.websiteLabel
+G2L["6"] = Instance.new("TextLabel", G2L["3"]);
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["TextColor3"] = Color3.fromRGB(185, 185, 185);
+G2L["6"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["6"]["Size"] = UDim2.new(0, 112, 0, 15);
+G2L["6"]["Text"] = [[www.asshurthosting.pw]];
+G2L["6"]["Name"] = [[websiteLabel]];
+G2L["6"]["Font"] = Enum.Font.SourceSans;
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["Position"] = UDim2.new(0, 303, 0.5, 0);
+
+-- StarterGui.SirhurtGUI.mainFrame.topBarFrame.logoImage
+G2L["7"] = Instance.new("ImageLabel", G2L["3"]);
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["7"]["Image"] = [[http://www.roblox.com/asset/?id=4739600121]];
+G2L["7"]["Size"] = UDim2.new(0, 18, 0, 18);
+G2L["7"]["Name"] = [[logoImage]];
+G2L["7"]["BackgroundTransparency"] = 1;
+G2L["7"]["Position"] = UDim2.new(0, 5, 0.5, 0);
+
+-- StarterGui.SirhurtGUI.mainFrame.topBarFrame.nameLabel
+G2L["8"] = Instance.new("TextLabel", G2L["3"]);
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["TextColor3"] = Color3.fromRGB(185, 185, 185);
+G2L["8"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["8"]["Size"] = UDim2.new(0, 60, 0, 15);
+G2L["8"]["Text"] = [[ABC123]];
+G2L["8"]["Name"] = [[nameLabel]];
+G2L["8"]["Font"] = Enum.Font.SourceSans;
+G2L["8"]["BackgroundTransparency"] = 1;
+G2L["8"]["Position"] = UDim2.new(0, 23, 0.5, 0);
+
+-- StarterGui.SirhurtGUI.mainFrame.topBarFrame.scriptHubBtn
+G2L["9"] = Instance.new("TextButton", G2L["3"]);
+G2L["9"]["TextSize"] = 14;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(40, 40, 40);
+G2L["9"]["TextColor3"] = Color3.fromRGB(185, 185, 185);
+G2L["9"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["9"]["Size"] = UDim2.new(0, 65, 0, 15);
+G2L["9"]["Name"] = [[scriptHubBtn]];
+G2L["9"]["BorderColor3"] = Color3.fromRGB(81, 81, 81);
+G2L["9"]["Text"] = [[Script Hub]];
+G2L["9"]["Font"] = Enum.Font.SourceSans;
+G2L["9"]["Position"] = UDim2.new(0, 85, 0.5, 0);
+G2L["9"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.SirhurtGUI.mainFrame.topBarFrame.runBtn
+G2L["a"] = Instance.new("TextButton", G2L["3"]);
+G2L["a"]["TextSize"] = 14;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(40, 40, 40);
+G2L["a"]["TextColor3"] = Color3.fromRGB(185, 185, 185);
+G2L["a"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["a"]["Size"] = UDim2.new(0, 75, 0, 15);
+G2L["a"]["Name"] = [[runBtn]];
+G2L["a"]["BorderColor3"] = Color3.fromRGB(81, 81, 81);
+G2L["a"]["Text"] = [[]];
+G2L["a"]["Font"] = Enum.Font.SourceSans;
+G2L["a"]["Position"] = UDim2.new(0, 160, 0.5, 0);
+G2L["a"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.SirhurtGUI.mainFrame.topBarFrame.runBtn.runLabel
+G2L["b"] = Instance.new("TextLabel", G2L["a"]);
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["TextColor3"] = Color3.fromRGB(185, 185, 185);
+G2L["b"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["b"]["Size"] = UDim2.new(0, 50, 1, 0);
+G2L["b"]["Text"] = [[Run Script]];
+G2L["b"]["Name"] = [[runLabel]];
+G2L["b"]["Font"] = Enum.Font.SourceSans;
+G2L["b"]["BackgroundTransparency"] = 1;
+G2L["b"]["Position"] = UDim2.new(1, -5, 0, 0);
+
+-- StarterGui.SirhurtGUI.mainFrame.topBarFrame.runBtn.statusFrame
+G2L["c"] = Instance.new("Frame", G2L["a"]);
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(41, 200, 13);
+G2L["c"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["c"]["Size"] = UDim2.new(0, 9, 0, 9);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c"]["Position"] = UDim2.new(0, 5, 0.5, 0);
+G2L["c"]["Name"] = [[statusFrame]];
+
+-- StarterGui.SirhurtGUI.mainFrame.topBarFrame.mainScript
+G2L["d"] = Instance.new("LocalScript", G2L["3"]);
+G2L["d"]["Name"] = [[mainScript]];
+
+-- StarterGui.SirhurtGUI.mainFrame.topBarFrame.underlineFrame
+G2L["e"] = Instance.new("Frame", G2L["3"]);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(185, 185, 185);
+G2L["e"]["BackgroundTransparency"] = 1;
+G2L["e"]["Size"] = UDim2.new(0, 130, 0, 1);
+G2L["e"]["Position"] = UDim2.new(0, 295, 0, 22);
+G2L["e"]["Name"] = [[underlineFrame]];
+
+-- StarterGui.SirhurtGUI.mainFrame.tabFrame
+G2L["f"] = Instance.new("Frame", G2L["2"]);
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["f"]["Size"] = UDim2.new(1, 0, 0, 23);
+G2L["f"]["Position"] = UDim2.new(0, 0, 0, 27);
+G2L["f"]["Name"] = [[tabFrame]];
+
+-- StarterGui.SirhurtGUI.mainFrame.tabFrame.tabBtn1
+G2L["10"] = Instance.new("TextButton", G2L["f"]);
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["TextSize"] = 23;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["Size"] = UDim2.new(0, 120, 1, 0);
+G2L["10"]["Name"] = [[tabBtn1]];
+G2L["10"]["Text"] = [[]];
+G2L["10"]["Font"] = Enum.Font.SourceSansLight;
+
+-- StarterGui.SirhurtGUI.mainFrame.tabFrame.tabBtn1.tabLabel
+G2L["11"] = Instance.new("TextLabel", G2L["10"]);
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["TextSize"] = 18;
+G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["11"]["Size"] = UDim2.new(0, 80, 0, 23);
+G2L["11"]["Text"] = [[Script1.lua]];
+G2L["11"]["Name"] = [[tabLabel]];
+G2L["11"]["Font"] = Enum.Font.SourceSans;
+G2L["11"]["BackgroundTransparency"] = 1;
+G2L["11"]["Position"] = UDim2.new(0, 5, 0.5, 0);
+
+-- StarterGui.SirhurtGUI.mainFrame.tabFrame.tabBtn1.exitBtn
+G2L["12"] = Instance.new("TextButton", G2L["10"]);
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["TextSize"] = 20;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["12"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["12"]["Name"] = [[exitBtn]];
+G2L["12"]["Text"] = [[x]];
+G2L["12"]["Font"] = Enum.Font.SourceSansSemibold;
+G2L["12"]["Position"] = UDim2.new(0, 95, 0.5, 0);
+G2L["12"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.SirhurtGUI.mainFrame.tabFrame.newTabBtn
+G2L["13"] = Instance.new("TextButton", G2L["f"]);
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["TextSize"] = 20;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["Size"] = UDim2.new(0, 30, 1, 0);
+G2L["13"]["Name"] = [[newTabBtn]];
+G2L["13"]["Text"] = [[+]];
+G2L["13"]["Font"] = Enum.Font.SourceSansBold;
+G2L["13"]["Position"] = UDim2.new(0, 120, 0, 0);
+G2L["13"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.SirhurtGUI.mainFrame.tabFrame.newTabBtn.mainScript
+G2L["14"] = Instance.new("LocalScript", G2L["13"]);
+G2L["14"]["Name"] = [[mainScript]];
+
+-- StarterGui.SirhurtGUI.mainFrame.scriptBox
+G2L["15"] = Instance.new("TextBox", G2L["2"]);
+G2L["15"]["CursorPosition"] = -1;
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["15"]["TextSize"] = 15;
+G2L["15"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["MultiLine"] = true;
+G2L["15"]["BackgroundTransparency"] = 1;
+G2L["15"]["Size"] = UDim2.new(0, 457, 0, 210);
+G2L["15"]["ClipsDescendants"] = true;
+G2L["15"]["Text"] = [[print("a")]];
+G2L["15"]["Position"] = UDim2.new(0, 5, 0, 54);
+G2L["15"]["Font"] = Enum.Font.Code;
+G2L["15"]["Name"] = [[scriptBox]];
+G2L["15"]["ClearTextOnFocus"] = false;
+
+-- StarterGui.SirhurtGUI.mainFrame.scriptBox.mainScript
+G2L["16"] = Instance.new("LocalScript", G2L["15"]);
+G2L["16"]["Name"] = [[mainScript]];
+
+-- StarterGui.SirhurtGUI.mainFrame.scriptBox.highlightLabel
+G2L["17"] = Instance.new("TextLabel", G2L["15"]);
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["17"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["TextSize"] = 15;
+G2L["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["17"]["Text"] = [[]];
+G2L["17"]["Name"] = [[highlightLabel]];
+G2L["17"]["Font"] = Enum.Font.Code;
+G2L["17"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.SirhurtGUI.mainFrame.scriptBox.testLabel
+G2L["18"] = Instance.new("TextLabel", G2L["15"]);
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["18"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["TextSize"] = 15;
+G2L["18"]["TextColor3"] = Color3.fromRGB(255, 199, 0);
+G2L["18"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["18"]["Text"] = [[]];
+G2L["18"]["Name"] = [[testLabel]];
+G2L["18"]["Font"] = Enum.Font.Code;
+G2L["18"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.SirhurtGUI.scriptHubFrame
+G2L["19"] = Instance.new("ImageLabel", G2L["1"]);
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["SliceCenter"] = Rect.new(20, 20, 480, 480);
+G2L["19"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["ImageColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["19"]["Visible"] = false;
+G2L["19"]["Image"] = [[http://www.roblox.com/asset/?id=4530318781]];
+G2L["19"]["Size"] = UDim2.new(0, 265, 0, 270);
+G2L["19"]["Name"] = [[scriptHubFrame]];
+G2L["19"]["BackgroundTransparency"] = 1;
+G2L["19"]["Position"] = UDim2.new(0, 15, 0, 15);
+
+-- StarterGui.SirhurtGUI.scriptHubFrame.topBarFrame
+G2L["1a"] = Instance.new("ImageLabel", G2L["19"]);
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["SliceCenter"] = Rect.new(20, 20, 480, 480);
+G2L["1a"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["ImageColor3"] = Color3.fromRGB(50, 50, 50);
+G2L["1a"]["Image"] = [[http://www.roblox.com/asset/?id=4530319192]];
+G2L["1a"]["Size"] = UDim2.new(1, 0, 0, 27);
+G2L["1a"]["Name"] = [[topBarFrame]];
+G2L["1a"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.SirhurtGUI.scriptHubFrame.topBarFrame.exitBtn
+G2L["1b"] = Instance.new("ImageButton", G2L["1a"]);
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 97, 93);
+G2L["1b"]["ImageColor3"] = Color3.fromRGB(255, 97, 93);
+G2L["1b"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["1b"]["Image"] = [[http://www.roblox.com/asset/?id=4132450915]];
+G2L["1b"]["Size"] = UDim2.new(0, 10, 0, 10);
+G2L["1b"]["Name"] = [[exitBtn]];
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["1b"]["Position"] = UDim2.new(0, 248, 0.5, 0);
+G2L["1b"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.SirhurtGUI.scriptHubFrame.topBarFrame.logoImage
+G2L["1c"] = Instance.new("ImageLabel", G2L["1a"]);
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["1c"]["Image"] = [[http://www.roblox.com/asset/?id=4739600121]];
+G2L["1c"]["Size"] = UDim2.new(0, 18, 0, 18);
+G2L["1c"]["Name"] = [[logoImage]];
+G2L["1c"]["BackgroundTransparency"] = 1;
+G2L["1c"]["Position"] = UDim2.new(0, 5, 0.5, 0);
+
+-- StarterGui.SirhurtGUI.scriptHubFrame.topBarFrame.nameLabel
+G2L["1d"] = Instance.new("TextLabel", G2L["1a"]);
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["TextSize"] = 14;
+G2L["1d"]["TextColor3"] = Color3.fromRGB(185, 185, 185);
+G2L["1d"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["1d"]["Size"] = UDim2.new(0, 60, 0, 15);
+G2L["1d"]["Text"] = [[Script Hub]];
+G2L["1d"]["Name"] = [[nameLabel]];
+G2L["1d"]["Font"] = Enum.Font.SourceSans;
+G2L["1d"]["BackgroundTransparency"] = 1;
+G2L["1d"]["Position"] = UDim2.new(0, 23, 0.5, 0);
+
+-- StarterGui.SirhurtGUI.scriptHubFrame.topBarFrame.mainScript
+G2L["1e"] = Instance.new("LocalScript", G2L["1a"]);
+G2L["1e"]["Name"] = [[mainScript]];
+
+-- StarterGui.SirhurtGUI.scriptHubFrame.runBtn
+G2L["1f"] = Instance.new("TextButton", G2L["19"]);
+G2L["1f"]["TextSize"] = 14;
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(40, 40, 40);
+G2L["1f"]["TextColor3"] = Color3.fromRGB(185, 185, 185);
+G2L["1f"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["1f"]["Size"] = UDim2.new(0, 75, 0, 15);
+G2L["1f"]["Name"] = [[runBtn]];
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(81, 81, 81);
+G2L["1f"]["Text"] = [[]];
+G2L["1f"]["Font"] = Enum.Font.SourceSans;
+G2L["1f"]["Position"] = UDim2.new(0, 10, 0, 253);
+G2L["1f"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.SirhurtGUI.scriptHubFrame.runBtn.runLabel
+G2L["20"] = Instance.new("TextLabel", G2L["1f"]);
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["TextSize"] = 14;
+G2L["20"]["TextColor3"] = Color3.fromRGB(185, 185, 185);
+G2L["20"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["20"]["Size"] = UDim2.new(0, 50, 1, 0);
+G2L["20"]["Text"] = [[Run Script]];
+G2L["20"]["Name"] = [[runLabel]];
+G2L["20"]["Font"] = Enum.Font.SourceSans;
+G2L["20"]["BackgroundTransparency"] = 1;
+G2L["20"]["Position"] = UDim2.new(1, -5, 0, 0);
+
+-- StarterGui.SirhurtGUI.scriptHubFrame.runBtn.statusFrame
+G2L["21"] = Instance.new("Frame", G2L["1f"]);
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(41, 200, 13);
+G2L["21"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["21"]["Size"] = UDim2.new(0, 9, 0, 9);
+G2L["21"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["Position"] = UDim2.new(0, 5, 0.5, 0);
+G2L["21"]["Name"] = [[statusFrame]];
+
+-- StarterGui.SirhurtGUI.scriptHubFrame.scriptList
+G2L["22"] = Instance.new("ScrollingFrame", G2L["19"]);
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["MidImage"] = [[http://www.roblox.com/asset/?id=2991280711]];
+G2L["22"]["TopImage"] = [[http://www.roblox.com/asset/?id=2991280711]];
+G2L["22"]["ScrollBarImageTransparency"] = 0.5;
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["22"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["22"]["Size"] = UDim2.new(0, 243, 0, 116);
+G2L["22"]["ScrollBarThickness"] = 5;
+G2L["22"]["Position"] = UDim2.new(0.5, 0, 0, 38);
+G2L["22"]["Name"] = [[scriptList]];
+G2L["22"]["BottomImage"] = [[http://www.roblox.com/asset/?id=2991280711]];
+
+-- StarterGui.SirhurtGUI.scriptHubFrame.scriptList.UIListLayout
+G2L["23"] = Instance.new("UIListLayout", G2L["22"]);
+G2L["23"]["Padding"] = UDim.new(0, 2);
+G2L["23"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- StarterGui.SirhurtGUI.scriptHubFrame.scriptList.scriptBtn
+G2L["24"] = Instance.new("TextButton", G2L["22"]);
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["TextSize"] = 15;
+G2L["24"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24"]["Size"] = UDim2.new(0, 238, 0, 20);
+G2L["24"]["Name"] = [[scriptBtn]];
+G2L["24"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["24"]["Text"] = [[N/A]];
+G2L["24"]["Font"] = Enum.Font.SourceSans;
+G2L["24"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.SirhurtGUI.scriptHubFrame.scriptList.selectedFrame
+G2L["25"] = Instance.new("Frame", G2L["22"]);
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(61, 121, 181);
+G2L["25"]["BackgroundTransparency"] = 0.699999988079071;
+G2L["25"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["25"]["Visible"] = false;
+G2L["25"]["Name"] = [[selectedFrame]];
+
+-- StarterGui.SirhurtGUI.scriptHubFrame.scriptList.mainScript
+G2L["26"] = Instance.new("LocalScript", G2L["22"]);
+G2L["26"]["Name"] = [[mainScript]];
+
+-- StarterGui.SirhurtGUI.scriptHubFrame.scriptDescription
+G2L["27"] = Instance.new("TextLabel", G2L["19"]);
+G2L["27"]["TextWrapped"] = true;
+G2L["27"]["BorderSizePixel"] = 0;
+G2L["27"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["27"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["27"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["27"]["TextSize"] = 15;
+G2L["27"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["27"]["Size"] = UDim2.new(0, 243, 0, 70);
+G2L["27"]["Text"] = [[]];
+G2L["27"]["Name"] = [[scriptDescription]];
+G2L["27"]["Font"] = Enum.Font.SourceSans;
+G2L["27"]["Position"] = UDim2.new(0.5, 0, 0, 165);
+
+-- StarterGui.SirhurtGUI.mainFrame.topBarFrame.mainScript
+local function C_d()
+local script = G2L["d"];
+	math.randomseed(tick());
+	local mainFrame = script.Parent.Parent;
+	local topBarFrame = script.Parent;
+	local tweenService = game:GetService("TweenService");
+	local random = math.random;
+	local characters = {
+	    "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
+	    "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",
+	    "1", "2", "3", "4", "5", "6", "7", "8", "9"
+	};
+	local RandomString = RandomString or function(length)
+		local randomString = "";
+		for i = 1, length do
+			randomString = randomString .. characters[random(#characters)];
+		end;
+		return randomString;
+	end;
+	topBarFrame.nameLabel.Text = RandomString(6);
+	
+	do
+		local tween1 = tweenService:Create(topBarFrame.exitBtn, TweenInfo.new(0.23, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {ImageColor3 = Color3.fromRGB(265, 106, 102)});
+		local tween2 = tweenService:Create(topBarFrame.exitBtn, TweenInfo.new(0.23, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {ImageColor3 = Color3.fromRGB(255, 96, 92)});
+		
+		topBarFrame.exitBtn.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement then
+				tween1:Play();
+			end;
+		end);
+		
+		topBarFrame.exitBtn.InputEnded:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement then
+				tween2:Play();
+			end;
+		end);
+		
+		topBarFrame.exitBtn.MouseButton1Click:Connect(function()
+			mainFrame.Parent:Destroy();
+		end);
+		
+		local tween3 = tweenService:Create(topBarFrame.miniBtn, TweenInfo.new(0.23, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {ImageColor3 = Color3.fromRGB(265, 226, 83)});
+		local tween4 = tweenService:Create(topBarFrame.miniBtn, TweenInfo.new(0.23, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {ImageColor3 = Color3.fromRGB(255, 216, 73)});
+		
+		topBarFrame.miniBtn.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement then
+				tween3:Play();
+			end;
+		end);
+		
+		topBarFrame.miniBtn.InputEnded:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement then
+				tween4:Play();
+			end;
+		end);
+		
+		local defaultSize = UDim2.new(0, 467, 0, 270);
+		local minimizedSize = UDim2.new(0, 467, 0, 27);
+		topBarFrame.miniBtn.MouseButton1Click:Connect(function()
+			mainFrame:TweenSize(mainFrame.Size == defaultSize and minimizedSize or defaultSize, Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.23, true);
+		end);
+		
+		local tween5 = tweenService:Create(topBarFrame.underlineFrame, TweenInfo.new(0.23, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundTransparency = 0});
+		local tween6 = tweenService:Create(topBarFrame.underlineFrame, TweenInfo.new(0.23, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundTransparency = 1});
+		
+		topBarFrame.websiteLabel.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement then
+				tween5:Play();
+			end;
+		end);
+		
+		topBarFrame.websiteLabel.InputEnded:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement then
+				tween6:Play();
+			end;
+		end);
+	end;
+	
+	do	
+		local dragger = {};
+		local mouse = game:GetService("Players").LocalPlayer:GetMouse();
+		local stepped = game:GetService("RunService").Stepped;
+		local newVector3 = Vector3.new;
+		local newUDim2 = UDim2.new;
+		dragger.new = function(obj)
+	    	spawn(function()
+	        	local minitial;
+	        	local initial;
+	        	local isdragging;
+	        	obj.topBarFrame.InputBegan:Connect(function(input)
+	            	if input.UserInputType == Enum.UserInputType.MouseButton1 then
+	                	isdragging = true;
+	                	minitial = input.Position;
+	                	initial = obj.Position;
+	                	local con;
+	                	con = stepped:Connect(function()
+	                    	if isdragging then
+	                        	local delta = newVector3(mouse.X, mouse.Y, 0) - minitial;
+	                        	obj.Position = newUDim2(initial.X.Scale, initial.X.Offset + delta.X, initial.Y.Scale, initial.Y.Offset + delta.Y);
+	                    	else
+	                        	con:Disconnect();
+	                    	end;
+	               	 	end);
+	                	input.Changed:Connect(function()
+	                    	if input.UserInputState == Enum.UserInputState.End then
+	                        	isdragging = false;
+	                    	end;
+	                	end);
+	            	end;
+	        	end);
+	    	end)
+		end;
+		
+		dragger.new(mainFrame);
+	end;
+	
+	do
+	    local runBtn = topBarFrame.runBtn;
+	    local scriptBox = mainFrame.scriptBox;
+	    local scriptHubBtn = topBarFrame.scriptHubBtn;
+	    local scriptHubFrame = mainFrame.Parent.scriptHubFrame;
+	
+		local tween1 = tweenService:Create(scriptHubBtn, TweenInfo.new(0.23, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundTransparency = 0});
+		local tween2 = tweenService:Create(scriptHubBtn, TweenInfo.new(0.23, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundTransparency = 1});
+		local tween3 = tweenService:Create(runBtn, TweenInfo.new(0.23, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundTransparency = 0});
+		local tween4 = tweenService:Create(runBtn, TweenInfo.new(0.23, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundTransparency = 1});
+	
+	    scriptHubBtn.MouseButton1Click:Connect(function()
+	        scriptHubFrame.Visible = not scriptHubFrame.Visible;
+	    end);
+	
+	    scriptHubBtn.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement then
+		        tween1:Play();
+			end;
+	    end);
+	
+	    scriptHubBtn.InputEnded:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement then
+		        tween2:Play();
+			end;
+	    end);
+	
+	    runBtn.MouseButton1Click:Connect(function()
+	        loadstring(scriptBox.Text)();
+	    end);
+	
+	    runBtn.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement then
+		        tween3:Play();
+			end;
+	    end);
+	
+	    runBtn.InputEnded:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement then
+		        tween4:Play();
+			end;
+	    end);
+	end;
+end;
+task.spawn(C_d);
+-- StarterGui.SirhurtGUI.mainFrame.tabFrame.newTabBtn.mainScript
+local function C_14()
+local script = G2L["14"];
+	local tabs = {};
+	
+	local newTabBtn = script.Parent;
+	local tabFrame = script.Parent.Parent;
+	local tabBtn = tabFrame.tabBtn1;
+	local scriptBox = script.Parent.Parent.Parent.scriptBox;
+	
+	local currentTab = tabBtn;
+	
+	local newUDim2 = UDim2.new;
+	local remove = table.remove;
+	local defaultColor = Color3.fromRGB(30, 30, 30);
+	local currentColor = Color3.fromRGB(40, 40, 40);
+	
+	tabs[1] = {btn = tabBtn, text = ""};
+	
+	local function saveScript()
+	    if currentTab:FindFirstChild("exitBtn") then
+	        for i, v in next, tabs do
+	            if v.btn == currentTab then
+	                v.text = scriptBox.Text;
+	            end;
+	        end;
+	    end;
+	end;
+	
+	local function loadScript()
+	    saveScript();
+	    currentTab = tabBtn;
+	    for i, v in next, tabs do
+	        if v.btn == tabBtn then
+	            scriptBox.Text = v.text;
+	            v.btn.BackgroundColor3 = currentColor;
+	        else
+	            v.btn.BackgroundColor3 = defaultColor;
+	        end;
+	    end;
+	end;
+	
+	tabBtn.MouseButton1Click:Connect(loadScript);
+	
+	local function getLatestTab()
+	    for i = #tabs, 1, -1 do
+	        local v = tabs[i];
+	        if not v.deleted then
+	            return v.btn;
+	        end;
+	    end;
+	end;
+	
+	local function getOffset(index)
+	    local offset = 0;
+	    for i, v in next, tabFrame:GetChildren() do
+	        if v ~= newTabBtn then
+	            offset = offset + v.Size.X.Offset;
+	        end;
+	    end;
+	    if index and index ~= 0 then
+	        local removeOffset = getLatestTab().Size.X.Offset * (index and index or 0);
+	        offset = offset - removeOffset;
+	    end;
+	    return offset;
+	end;
+	
+	local function positionNewTabBtn(index)
+	    newTabBtn.Position = newUDim2(0, getOffset(index and index or 0), 0, 0);
+	end;
+	
+	local function newTab()
+		if #tabFrame:GetChildren() - 1 < 3 then
+		    local offset = getOffset();
+		    local tabAmount = tostring(#tabs + 1);
+		    
+		    local tabBtnClone = getLatestTab():Clone();
+		    tabBtnClone.Parent = tabFrame;
+		    tabBtnClone.Position = newUDim2(0, offset, 0, 0);
+		    tabBtnClone.Name = "tabBtn" .. tabAmount;
+		    tabBtnClone:WaitForChild("tabLabel");
+		    tabBtnClone.tabLabel.Text = "Script" .. tabAmount .. ".lua"; 
+		
+	        tabs[#tabs + 1] = {btn = tabBtnClone, text = ""};
+	        
+	        saveScript();
+	        currentTab = tabBtnClone;
+	        for i, v in next, tabs do
+	            if v.btn == currentTab then
+	                scriptBox.Text = v.text;
+	                v.btn.BackgroundColor3 = currentColor;
+	            else
+	                v.btn.BackgroundColor3 = defaultColor;
+	            end;
+	        end;
+		
+	        local function callback()
+	            local index;
+		        for i, v in next, tabs do
+	                if v.btn == tabBtnClone then
+	                    index = i;
+		                v.btn:Destroy();
+	                    v.deleted = true;
+		            end;
+	            end;
+	            saveScript();
+	            for i = #tabs, 1, -1 do
+	                local v = tabs[i];
+	                if i < index and not v.deleted then
+	                    currentTab = v.btn;
+	                    scriptBox.Text = v.text;
+	                    v.btn.BackgroundColor3 = currentColor;
+	                    return;
+	                else
+	                    v.btn.BackgroundColor3 = defaultColor;
+	                end;
+	            end;
+		    end;
+		
+		    local function closeTab()
+		        for i, v in next, tabs do
+	                if i > tonumber(tabAmount) then
+		                v.btn.Position = newUDim2(0, v.btn.Position.X.Offset - v.btn.Size.X.Offset, 0, 0);
+		            end;
+		        end;
+		        positionNewTabBtn(1);
+				callback();
+		    end;
+		
+	        tabBtnClone.exitBtn.MouseButton1Click:Connect(closeTab);
+	
+	        local function loadScript()
+	            saveScript();
+	            currentTab = tabBtnClone;
+	            for i, v in next, tabs do
+	                if v.btn == currentTab then
+	                    scriptBox.Text = v.text;
+	                    v.btn.BackgroundColor3 = currentColor;
+	                else
+	                    v.btn.BackgroundColor3 = defaultColor;
+	                end;
+	            end;
+	        end;
+	
+	        tabBtnClone.MouseButton1Click:Connect(loadScript);
+		
+		    positionNewTabBtn();
+		end;
+	end;
+	
+	newTabBtn.MouseButton1Click:Connect(newTab);
+end;
+task.spawn(C_14);
+-- StarterGui.SirhurtGUI.mainFrame.scriptBox.mainScript
+local function C_16()
+local script = G2L["16"];
+	return(function(e,l,Q)local h=getfenv or function()return _ENV end;local c=unpack or table.unpack;local f=string.char;local i=e;local J=setmetatable;local P=select;local d=table.concat;local O=string.byte;local a=string.sub;local X=table.insert;local E={}for e=0,255 do E[e]=f(e)end;local function U(t)local l,n,o="","",{}local W=256;local e=1;local function c()local l=i(a(t,e,e),36)e=e+1;local n=i(a(t,e,e+l-1),36)e=e+l;return n end;l=f(c())o[1]=l;while e<#t do local e=c()if E[e]then n=E[e]else n=l..a(l,1,1)end;E[W]=l..a(n,1,1)o[#o+1],l,W=n,n,W+1 end;return d(o)end;local f=U('23722G23723423923727921C1S1V1S1121S2342382792371L111S1U1X21G21D27J27J26R1Z21F27S27926R1G27W27X1J1R28127S2431S28527J24Z21628927J1O28D23721F28F27X23722B28428K26R21A28G2371W28G25V1L28G24Z1Q28R1M28G26R1X28G1J1I28G21F1Y21F27H27J21K1M1A1427E1N23423A27J13111Q1T1729K27J27B27D1123423B27J141I111T23423D27J21H1Q111M1W1M11152AC23423J27J21M1T151S1O2AA2AC2AE29W29Y2791K1I1U1M23423527J21821G23423427J1L27E2B327J1I1T29J2AZ2792B729L27927D1G1I1V2AY27J1Q1L29X27J171R1M2A32BD2371N1S29S279141R1Q1V2AX2782792A9131M1I29R2BG2371629Q2C42B82792BU29J23F2B52CG1G171Q1S2A32C72372A917162A22C02371H2A91I1O2BQ2CK1V102C627J1M2D91M2BO29C2C81M12162A82DB279101G29O1329R2A52BH1S1I1N101729O1T1K2A427J21G1M172AB2AD1Q1G2AX2AS2372DA1V2BP2B42791X1I1A2CJ2371T1M142BM27929P23423627J22J23423C2AI2BB1M2CA2F329Q2362362EW27J22I2FA279182FD2371E2FG2142FG21A2FG22G2FG22M2FG22H2FG22K2FG22E2FG2192FG2262ET2371D2G02EX27922N2FG2272FG2252FG2202D72372E0162AX2CE1L2BK2DA2EO1T2CI27I2AT2E71K2BU152DH2372GT171L2GU2GE2EQ1B29R2CN279171S2DZ2E11K28K23723N22427727J1Z2A12BU2H527J2131M2H41W1Q192AX23H27J2C31K1R1V1Q2HY1721R1I1H2DD23423E2BR1M2DZ2I42I62BL2CE21221J1Q1U21T23422Z2E52E71Z27M2CA11171A21C1R2BA2GT1N2HR1K1T2BK2GE2HO2H42GW27B1T2EQ2CQ2G52372362I92792J52HP172HD2JH2EE2H329R2F12792E6172IW2C41N2A92A32EE21P2AV2HU2HW2I12HZ2K42I32I52I72GQ23721J2IB2E01S2EN2EE1K10161H2FG22L2JD23622W27J2EO2KJ2KL2CE21C27D2EQ2HH2792HJ2JX29R2JG23729H111O10131I2EC2JI2J72DU2372J61721D1S2CG2DY2FG2172GW2KC2HA2KF2H22JJ2GW29E29G29I2HD2HF2F02F21N2F42CL2HL2D11U2CC1G1R2G122E2ES2JZ2K12342HV2792HX2K52I22ID2I72LF2LH29U27E27G2KV27C2B72H62371Z2H91Q2CR2CT2JL2762MX2H81T161U2I6112JL29B2BW22E1I2FG2292FG22C2FP2FG2LF2371V2JD22J23725422K2JD27922B2792NU2EX2O127S2NU2B42NW2NZ22K29Y2BW27J2O02372O92O322K2AZ2EJ28L2O72AZ2OL2OF2OM2AZ22P2O72B42EE22R2OK2762OW2OU2NT2OG23729L2EX2NY2OZ2B42AZ2782P42O42OW27I2P92O82372AZ2MX2OZ2OE2EX2OQ2PI2372L42OB22K29L2EE2PP2782CV2AS2NU2C12JE2L02OZ2I92CE23921R2Q12L52PZ2EX23B27W2PX2Q72G51Z2Q62CV2Q42Q6142Q82OD2QB22K2PY2P322Y2Q62CN2A522B2A52NU2I92I92PK2O72F12JQ2372PL2NU2AH2R32PP2I92AH2P72O727922A2PZ2I92QA2OZ2RE2PZ2RI2QC2QK2QE2Q627S22B27R2QX2PN2PZ2PP2F12BW2PD2R22372R82R62PF27J2PD23I2372QT2OF2S82S827X2S42AH2SD2O72RA2S52PD2A52SA2C72RU2RO2372A52RM2QO2QD28L2QR2RU2CN2AH2QI2RU1I2QL2ST2792T32RP2RU2RR21S2Q62QZ2OF2RY28K2S42OA2SI2372RB2OJ2TC2372S82R522K2F12MI2OF2I92TF2SO22K2I92202RW2QM2RJ2372U02Q92QN2T62RW2QF2T92S62192TN2NW2NU2TF2NX2O72AH2SA2PP2AH2AH2SE2TR2S22TK2TM2UG2UR2S322K2TL2UI2OZ2S82UL2O72SC2TG2UX2US2S82PD2UN2UR2R92US2AZ2PD2QY2TO2R42R12372TT2VC2TW2TJ2T72RL2U72372VP2MY2Q62KA22B21I2TN2OA2RU2OM21V2TJ23G2372OU2SL2S92VI2OY2RU22Q2SR2UT22K2SM2WE2WB2TY2P12WE2PP2WH2792TQ2F122V2V52AH2OI2TQ2S82WS2UP2HV2PO2O72W52NO2O72HV2HV2W52WN2VK2S52WJ2I922O2WM2O72A52R32XC2OW2SS2RD2SV22B2SX2WK2SZ2372392W32SP2U12T52SV2VU2RU2VW2OQ2RU2I92W02WK2W22W42W62WF2WH2OQ2XJ2WD2QU2XG2W92A52XJ29L2NO2NU2WO2VI2OZ2WR2WT2OW2WP2V32372WY2OF2X02V52X32V52X62372X82YG2HV2AZ2XJ2XE2YL2WG2VB2Y92Q62B42A523927I2NU29Y2XE2EX2AZ2XX2ZL2Q02ZJ2WL2792XT2PM1E2XW2VR2ZW2U62U325N2U92PM2QH2Q52ZR31022O22XX31082R421M2PM22U27S22C2OZ2CE27J21Z2PM2OM2T12PE26T2T42VR310Q31002QC310B2XZ2PE2RR2QO2ZR29Y2UF22K2782RZ2O72PU23722T2OF27I31162OZ27I27I311A2PP29Y311C2WF29Y29Y2TP311723722S2V529Y31152XS2O729Y310B310U2SU310W2UA310Y2S61Y2PM31122OF311U2UP311K2UP311J2SK311W2OD2VH2TQ278311R312C311V2RC2PM25J310R2U3312P2T82PE2OA312229L2UO2XS2KQ2ZR25U2PZ2PR2VR3132311Z279312S2ZQ2PE2VW21T31262S5311I2S52AZ2W32PM2W52OY2O729L2SH2WJ29Y2WD29L313Q2ZS2OF29L2MX312I2YV2V527I2WV2O72CN2YW2VC2X12OZ2A52X42TN2ZA29L2Y42ZD2ZR2XE310J2NU29L2XI312F2B42PR2XM1R2F8313A2OE2NX2IN31112VB22F2PM312Y2XX314R2EX22D310F2QC24G2PZ2IN2XX3158312T311T27J310O29Y315C2VQ2U3315I310X29Y310J22I313E312L310J312F2VW312F314U312F2Y7313K2ZD313N2XA279313U313S314G2PE315S310I2W92YT2OZ27831462O7314227J2TQ31452V52VG2UP314A316K2RV314D2RV2Z7312F314I313W2ZC313U314O312G2U3315323722D21K2U324L2PZ2QR2XX317631372HE31032ZR2QH2XU2PE24P2ZX2U3317I317B23N317D316727S315P314X315R311S237315U313E2Y52OE313I312F313L316V2TT31642WL313U3168314K316A2YO2NU316D31412YS318B22K316J2UP316L2OF316N318J316P316V314F313U316U2PP314L27J316X2WL2PW2SU317131552U322O314S22X2U22QC3193315D27X22B22M313E311331292WF3118311H316F313F2WF311F31192OF312D2AZ22D316T319431962SU3198314T313V315G237319W317B319W312G2ZR2NW21N3104317U317W314X317Y313H237313J2ZR3182318T2Z3318V312F316531872V5313X316H311P316E311E318F316I3140318N31482YM2XF314731B03189318Q316T313V3169314M2PM316Y318Y2MJ314S31732U322T314S2KQ2XX31BG317B230314S31A4312327J2U0317E317U311D314X2UW3127312L2L42PD311M2ZC2PM2L431BB2373171315M319Y317G29Y21J31BN319U27931CC31992RR3195314X319E2U12PD31182UW312B319O317V312E31692OM31AI2OM313Z2OT31612B42782WJ29L314P31CN2WL2P8311P2782PC319J31AP2PP311K3113319M2UZ2NU319M2Y5311K318031AT31AH31443162316627I2WD2CN2WJ27I3188318H318A2TQ2I931AS31AZ2CV2WQ31AW2OF2AH31AY22K2S8314B2SF2VH2PP2XR316S31AT2XE2PH2NU2CN31B831DJ2OW2CN315231BN3122315E2ZT31CA31C631CD31ES31CH2S631CJ2PE31BX311P2JD31D627831CP319K313G311K2PD29L31CV316131CX311P31CZ316931D1316631D4312G31D629L31D8316C311V31DB31AT31DD319J2AZ31DG31CS31DI22K31DK311B31AD31AF31G331AJ313M2OZ2CN2Z431DW23731DU31DS31B631DQ313Y2TJ31E32ZB31E52VJ31GM31E92V531EC2YR2SG2OF31EH31GH31EK31GW316W319J2B42H631EU319K22B314W31F4314Y310M27S21Y2U32KO22H27S2T32QC2RR2XM2792R02OZ2ZM31AQ2OZ31FG2TQ2P6317U2HD318931HW3114311V316B31EP2OI31EG319A31GJ316Z31DQ2AZ2RH2XM2OQ2QQ2OZ2R72WL31912S431IC311V2XX31IJ22B2B42S42F12GQ21G31IE2S52EX2ZH31AT2S831HP2XX31IY2XS21C31AT31HM2ZD2272U327X31J72QC31I331JA2SU2NW21X31HE27S31JG2QC2OA31JD2792PS31JM31B631JJ2SU31I331JR31JN27S31JP2OA31JU31JQ31J831JW2U32CV23731JZ31K431JZ2KA31K52U32MX22B2AH31EM27J2CN2TQ2A531EA31IQ2V531EN2U131JH27J22V2G522P22931KP2WF27S2OP2O72EX314331HR31I731HT31GI2U331HU2TQ2O231G22O231KY31L231GO2P531I0318G31EV2OF2Q92S52TQ31FZ2S62OV31FI31LF2KA2TQ29Y31GK316931EA2AZ31FF318G2O531LO31LF31L7312F2LF2TQ318U31I131HZ312Y2PP31FM31LC31A531M231AB318G313O31HQ318C31DR2TQ27I2Z431FC31LL316131F7316131LZ313Z313M31MN31GF31MK31DZ2PL316V2CN2Y5278231318E27931DN31EP2XE2WS31GE310F2Y52MX31NA31DZ2XE311A2WJ2CN31NF2TU27J31NI2XD311Q31662I931NO2X931N931AE2YG2XE2IN2WJ2A531NW2VJ31NY31G72F12XE2QR2WJ2F131O531IT31O72UJ31A023731952WJ2AH31OE2NU2SH31NI2S82XE2KQ2WJ2S8310F2WZ31NQ31NZ2OZ2HV2XE23331662HV31OW2OF2Z431NI2W52XE23231662W531P62PP313M31NI2OU2XE31N72WJ2OU31PF2O72WD31OG2OZ2WD2XE23031662WD31PO2OZ31N231NI2OQ2XE2NY2WJ2OQ31PY2NU2XE31PR31Q831OI2RF2WJ2XE31Q722K2YW31NI2WS2XE31KU2WJ2WS31QG31P6313I2172OZ310F2XE2282W621Q31QT23731QG319I31NI311A2XE314Z2WJ311A31QG312K2S531G7311R2XE22E3166311R31QG2IN31QA22K2IN2XE319R2WJ2IN31QG2QR31RK2QR2XE310H2WJ2QR31QG319531RK31952XE2NS2WJ319531QG2KQ31RK2KQ2XE315P2WJ2KQ31QG31P331RK31P32XE31HG2WJ31P331QG31PC31RK31PC2XE2752WJ31PC31ON22K31N731RK31N72XE22N316631N731SV31PV31RK31PV2XE319C2WJ31PV31SV2P431RB2O72NY2XE22L31662NY31SV2RF31RK2RF2XE2QO2WJ2RF31QG31KU31RK31KU2XE2W32WJ31KU31SV31QW31RK31QW2ZP2WJ31QW31SV314Z31RK314Z2XE31EI2NU314Z31SV31RF31RK31RF2XE21U316631RF31SV319R31RK319R2XE313D2WJ319R31QG310H2JH31OZ2NU310H2XE2TB2WJ310H310F2EX31G7310H310L31HD2PP2NS31UY31G72NS2XE31JG2WJ2NS31V631UZ22K2NS31VA2OF315P31VE2O7315P2XE21W3166315P31VL31G7315P31VP2PP31HG31VS2OZ31HG2XE223316631HG31VZ2O731HG31W22O727531W52NU2752XE222316627531WC2OZ27531WF2OZ31T131WI22K31T12XE221316631T131WP2NU31T131WS2NU319C31WV319C2XE2U02WJ319C31X222K319C31W221H2OZ31TI31WV31TI2XE31J72WJ31TI31XE31TI31X522K2SU2OW31G72QO2XE22631662QO31XE2QO31XT313J31XW2O72W32XE2252W631UL2NU2W331XE2W331XT31UL31WV31UL2XE224316631UL31XE31UL31XT313D31WV313D2XE27W2WJ313D31XE313D31XH2OZ2TB31WV2TB2XE21E31662TB31XE2TB31XT310L31WV310L2XE27R2WJ310L31XE310L31XT31VB31Y72OZ31HD2XE31J322R31YD22K31HD31XE31HD31XT31JG31WV31JG2XE21J316631JG31XE31JG31XT31VW31WV31VW2XE2VY2WJ31VW31XE31VW31W22XE2NU31W931VE31QS320M31OI31XI22R2WS320Q31VZ320P22K31W931W221231FT31W92G5320L31G831O731QW31NB23731IS31NE31KM31OY31G72CN2XE31A731NM31R0316O31RK31NS310D2XJ31QG278314F22P310D31EP21L315F317G27I24V317J2QC3220317B24U2PZ321T31AT31742WP321U31DZ2Q527J310H2Y027S2W52RU2EX2SS2VR23S2RW29Y31OO27X32272NU2HV322D279322F22K2W531K42132OZ2OU313M2XX24D2PZ2XO2OZ2XE31Q2310C2OZ2WS31QY322E31QZ2R8310L2NU2WS310N21A323923724E2PZ2WS2XX323Q317B32362G5322P31EB2U131IW322T2372452PZ2ZN2VR324431IV3106323Z322N3109322M2RW31W932422CV22B31WM32422HV21P31P731OY2TQ2OU323F2OF2WD2R82O72OU2OM2WJ31PA2Y9324Z321K31N52XA322Z2ZI31DZ242324531CE23732592PK322B2CN31WU28L31Z831KF2CN21O2WF2I92CN2QF2W82CN31252S02W91X318G2AH1W31MG2V62AH31UL2S72W932312TQ2W532112UP2S82W52VE2YU2S821131J22OZ2Z42EX2JG31JP2PH31JP2R831JP31K431JP2NO31JP31MB31JP2PO31JP31JO31L631K22QC310J2I9322Q2W52G531HD2QC2NW');local t=(bit or bit32)and(bit or bit32).bxor or function(e,l)local n,o=1,0 while e>0 and l>0 do local W,t=e%2,l%2 if W~=t then o=o+n end e,l,n=(e-W)/2,(l-t)/2,n*2 end if e<l then e=l end while e>0 do local l=e%2 if l>0 then o=o+n end e,n=(e-l)/2,n*2 end return o end local function o(n,e,l)if l then local e=(n/2^(e-1))%2^((l-1)-(e-1)+1);return e-e%1;else local e=2^(e-1);return(n%(e+e)>=e)and 1 or 0;end;end;local e=1;local function n()local n,l,W,o=O(f,e,e+3);n=t(n,115)l=t(l,115)W=t(W,115)o=t(o,115)e=e+4;return(o*Q)+(W*65536)+(l*256)+n;end;local function U(...)return{...},P('#',...)end local function i()local l=t(O(f,e,e),115);e=e+1;return l;end;local function W()local l,n=O(f,e,e+2);l=t(l,115)n=t(n,115)e=e+2;return(n*256)+l;end;local function d()local l={};local P={};local X={};local J={[7]=X,[3]=l,[5]=nil,[8]=P,[4]=nil,};local l={}local c={}for X=1,i()==0 and W()*2 or n()do local l=i();while true do if(l==0)then local n,e=n(),n();local t,n,e,o=1,(o(e,1,20)*(2^32))+n,o(e,21,31),((-1)^o(e,32));if e==0 then if n==0 then l=o*0 break;else e=1;t=0;end;elseif(e==2047)then l=(o*((n==0 and 1 or 0)/0))break;end;l=(o*(2^(e-1023)))*(t+(n/(2^52)));break;end if(l==1)then l=(i()~=0);break;end if(l==3)then local n,W,o='',n();if(W==0)then l=n;break;end;o=a(f,e,e+W-1);e=e+W;for e=1,#o do n=n..E[t(O(a(o,e,e)),115)]end l=n break;end l=nil break;end c[X]=l;end;for e=1,n()do P[e-1]=d();end;for E=1,n()do local e=i();if(o(e,1,1)==0)then local l=o(e,2,3);local t=o(e,4,6);local a,e,i=W(),W(),W();local e={[2]=nil,[4]=i,[3]=e,[6]=a,};if(l==2)then e[3]=n()-65536 end if(l==3)then e[3],e[2]=n()-65536,W()end if(l==1)then e[3]=n()end if(l==0)then e[3],e[2]=W(),W()end if(o(t,3,3)==1)then e[2]=c[e[2]]end if(o(t,2,2)==1)then e[3]=c[e[3]]end if(o(t,1,1)==1)then e[4]=c[e[4]]end X[E]=e;end end;J[4]=i();return J;end;local function f(e,W,a)local o=e[7];local Q=0;local n=e[8];local l=e[5];local l={}local e=e[4];return function(...)local l=1;local d=n;local n={};local h={};local O=P('#',...)-1;local t=-1;local i=e;local t={...};local o=o;local E={};local e=U for e=0,O do if(e>=i)then h[e-i]=t[e+1];else n[e]=t[e+1];end;end;local t;local e;local i=O-i+1 while true do e=o[l];t=e[6];if Q>0 then n[e[4]]=e[3];end if t<=48 then if t<=23 then if t<=11 then if t<=5 then if t<=2 then if t<=0 then if(n[e[4]]~=n[e[2]])then l=l+1;else l=e[3];end;elseif t==1 then n[e[4]]=n[e[3]]+n[e[2]];else local a;local t;n[e[4]]=(not n[e[3]]);l=l+1;e=o[l];W[e[3]]=n[e[4]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];t=e[4];a=n[e[3]];n[t+1]=a;n[t]=a[e[2]];l=l+1;e=o[l];t=e[4]n[t]=n[t](n[t+1])l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=n[e[3]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]]*n[e[2]];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];l=e[3];end;elseif t<=3 then local l=e[4];local o=n[e[3]];n[l+1]=o;n[l]=o[e[2]];elseif t>4 then n[e[4]]=n[e[3]]*n[e[2]];else n[e[4]]=(e[3]~=0);end;elseif t<=8 then if t<=6 then n[e[4]][e[3]]=n[e[2]];elseif t==7 then local t=e[4];local W=e[2];local o=t+2 local t={n[t](n[t+1],n[o])};for e=1,W do n[o+e]=t[e];end;local t=t[1]if t then n[o]=t l=e[3];else l=l+1;end;else local l=e[4]n[l]=n[l](c(n,l+1,e[3]))end;elseif t<=9 then local l=e[4]n[l](c(n,l+1,e[3]))elseif t==10 then local W;local t;t=e[4];W=n[e[3]];n[t+1]=W;n[t]=W[e[2]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];if(n[e[4]]~=n[e[2]])then l=l+1;else l=e[3];end;else W[e[3]]=n[e[4]];end;elseif t<=17 then if t<=14 then if t<=12 then local W;local t;t=e[4];W=n[e[3]];n[t+1]=W;n[t]=W[e[2]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=n[e[3]];l=l+1;e=o[l];t=e[4]n[t](c(n,t+1,e[3]))l=l+1;e=o[l];do return end;elseif t>13 then n[e[4]][n[e[3]]]=n[e[2]];else local i;local t;t=e[4];i=n[e[3]];n[t+1]=i;n[t]=i[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]]+e[2];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];t=e[4];i=n[e[3]];n[t+1]=i;n[t]=i[e[2]];l=l+1;e=o[l];t=e[4]n[t]=n[t](n[t+1])l=l+1;e=o[l];n[e[4]]=a[e[3]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];t=e[4];i=n[e[3]];n[t+1]=i;n[t]=i[e[2]];l=l+1;e=o[l];t=e[4]n[t](n[t+1])l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];t=e[4];i=n[e[3]];n[t+1]=i;n[t]=i[e[2]];l=l+1;e=o[l];t=e[4]n[t]=n[t](n[t+1])l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=n[e[3]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]]*n[e[2]];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];l=e[3];end;elseif t<=15 then local l=e[4]local t={n[l]()};local o=e[2];local e=0;for l=l,o do e=e+1;n[l]=t[e];end elseif t>16 then for e=e[4],e[3]do n[e]=nil;end;else if(n[e[4]]==n[e[2]])then l=l+1;else l=e[3];end;end;elseif t<=20 then if t<=18 then local a;local t;t=e[4];a=n[e[3]];n[t+1]=a;n[t]=a[e[2]];l=l+1;e=o[l];t=e[4]n[t]=n[t](n[t+1])l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=n[e[3]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]]*n[e[2]];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];elseif t>19 then n[e[4]][e[3]]=n[e[2]];else n[e[4]]={};end;elseif t<=21 then if(n[e[4]]==e[2])then l=l+1;else l=e[3];end;elseif t==22 then n[e[4]]=n[e[3]]+e[2];else do return end;end;elseif t<=35 then if t<=29 then if t<=26 then if t<=24 then n[e[4]]=n[e[3]]+e[2];elseif t>25 then local i;local t;t=e[4];i=n[e[3]];n[t+1]=i;n[t]=i[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]]+e[2];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];t=e[4];i=n[e[3]];n[t+1]=i;n[t]=i[e[2]];l=l+1;e=o[l];t=e[4]n[t]=n[t](n[t+1])l=l+1;e=o[l];n[e[4]]=a[e[3]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];t=e[4];i=n[e[3]];n[t+1]=i;n[t]=i[e[2]];l=l+1;e=o[l];t=e[4]n[t](n[t+1])l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];t=e[4];i=n[e[3]];n[t+1]=i;n[t]=i[e[2]];l=l+1;e=o[l];t=e[4]n[t]=n[t](n[t+1])l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=n[e[3]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]]*n[e[2]];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];else n[e[4]]=n[e[3]][e[2]];end;elseif t<=27 then if(n[e[4]]==n[e[2]])then l=l+1;else l=e[3];end;elseif t>28 then n[e[4]]=n[e[3]]*n[e[2]];else n[e[4]]=n[e[3]][e[2]];end;elseif t<=32 then if t<=30 then if(n[e[4]]==e[2])then l=l+1;else l=e[3];end;elseif t>31 then n[e[4]][e[3]]=e[2];else n[e[4]]=e[3];end;elseif t<=33 then n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];elseif t>34 then local W;local t;n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];t=e[4];W=n[t];for e=t+1,e[3]do X(W,n[e])end;else local t;n[e[4]]=a[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];n[e[4]]=a[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];n[e[4]]=a[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];n[e[4]]=a[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];n[e[4]]=a[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];n[e[4]]=a[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};end;elseif t<=41 then if t<=38 then if t<=36 then W[e[3]]=n[e[4]];elseif t==37 then if not n[e[4]]then l=l+1;else l=e[3];end;else local o=e[4]local t={n[o](n[o+1])};local l=0;for e=o,e[2]do l=l+1;n[e]=t[l];end end;elseif t<=39 then n[e[4]]=n[e[3]];elseif t>40 then local a;local t;n[e[4]]=(not n[e[3]]);l=l+1;e=o[l];W[e[3]]=n[e[4]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];t=e[4];a=n[e[3]];n[t+1]=a;n[t]=a[e[2]];l=l+1;e=o[l];t=e[4]n[t]=n[t](n[t+1])l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=n[e[3]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]]*n[e[2]];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];l=e[3];else local i;local t;n[e[4]]=W[e[3]];l=l+1;e=o[l];t=e[4];i=n[e[3]];n[t+1]=i;n[t]=i[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];t=e[4];i=n[e[3]];n[t+1]=i;n[t]=i[e[2]];l=l+1;e=o[l];t=e[4]n[t]=n[t](n[t+1])l=l+1;e=o[l];n[e[4]]=a[e[3]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];t=e[4];i=n[e[3]];n[t+1]=i;n[t]=i[e[2]];l=l+1;e=o[l];t=e[4]n[t](n[t+1])l=l+1;e=o[l];n[e[4]]=a[e[3]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];for e=e[4],e[3]do n[e]=nil;end;l=l+1;e=o[l];l=e[3];end;elseif t<=44 then if t<=42 then n[e[4]][n[e[3]]]=n[e[2]];elseif t>43 then n[e[4]]=n[e[3]]+n[e[2]];else n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]={};end;elseif t<=46 then if t==45 then local a;local t;t=e[4];a=n[e[3]];n[t+1]=a;n[t]=a[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]]+e[2];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]]+e[2];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];if(n[e[4]]==e[2])then l=l+1;else l=e[3];end;else n[e[4]]={};end;elseif t==47 then local a;local t;t=e[4];a=n[e[3]];n[t+1]=a;n[t]=a[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]]+e[2];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]]+e[2];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];t=e[4];a=n[e[3]];n[t+1]=a;n[t]=a[e[2]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];if not n[e[4]]then l=l+1;else l=e[3];end;else if n[e[4]]then l=l+1;else l=e[3];end;end;elseif t<=72 then if t<=60 then if t<=54 then if t<=51 then if t<=49 then n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=e[2];elseif t>50 then local a;local t;t=e[4];a=n[e[3]];n[t+1]=a;n[t]=a[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];t=e[4];a=n[e[3]];n[t+1]=a;n[t]=a[e[2]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];if n[e[4]]then l=l+1;else l=e[3];end;else local a;local t;t=e[4];a=n[e[3]];n[t+1]=a;n[t]=a[e[2]];l=l+1;e=o[l];t=e[4]n[t]=n[t](n[t+1])l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=n[e[3]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]]*n[e[2]];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];l=e[3];end;elseif t<=52 then local e=e[4]n[e]=n[e](n[e+1])elseif t==53 then do return end;else n[e[4]]=W[e[3]];end;elseif t<=57 then if t<=55 then n[e[4]]=(not n[e[3]]);elseif t>56 then local t;n[e[4]]=n[e[3]]+e[2];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]]=a[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]];l=l+1;e=o[l];t=e[4]n[t]=n[t](n[t+1])l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][n[e[3]]]=n[e[2]];else n[e[4]]=#n[e[3]];end;elseif t<=58 then if(n[e[4]]~=e[2])then l=l+1;else l=e[3];end;elseif t==59 then W[e[3]]=n[e[4]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]]+e[2];l=l+1;e=o[l];W[e[3]]=n[e[4]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]]+e[2];l=l+1;e=o[l];W[e[3]]=n[e[4]];l=l+1;e=o[l];l=e[3];else n[e[4]]=n[e[3]];end;elseif t<=66 then if t<=63 then if t<=61 then local e=e[4]n[e](n[e+1])elseif t==62 then local l=e[4]n[l]=n[l](c(n,l+1,e[3]))else local o=e[4]local t={n[o](n[o+1])};local l=0;for e=o,e[2]do l=l+1;n[e]=t[l];end end;elseif t<=64 then l=e[3];elseif t>65 then local a;local t;t=e[4];a=n[e[3]];n[t+1]=a;n[t]=a[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]]+e[2];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];n[e[4]]=#n[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]]+n[e[2]];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];if(n[e[4]]==n[e[2]])then l=l+1;else l=e[3];end;else local W;local t;n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];n[e[4]]=a[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];t=e[4];W=n[e[3]];n[t+1]=W;n[t]=W[e[2]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];t=e[4];W=n[e[3]];n[t+1]=W;n[t]=W[e[2]];end;elseif t<=69 then if t<=67 then local i=d[e[3]];local c;local t={};c=J({},{__index=function(l,e)local e=t[e];return e[1][e[2]];end,__newindex=function(n,e,l)local e=t[e]e[1][e[2]]=l;end;});for c=1,e[2]do l=l+1;local e=o[l];if e[6]==60 then t[c-1]={n,e[3]};else t[c-1]={W,e[3]};end;E[#E+1]=t;end;n[e[4]]=f(i,c,a);elseif t==68 then local e=e[4]n[e]=n[e](n[e+1])else local a;local t;t=e[4];a=n[e[3]];n[t+1]=a;n[t]=a[e[2]];l=l+1;e=o[l];t=e[4]n[t]=n[t](n[t+1])l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=n[e[3]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]]*n[e[2]];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];l=e[3];end;elseif t<=70 then n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];elseif t==71 then local e=e[4]n[e](n[e+1])else local a;local t;W[e[3]]=n[e[4]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];t=e[4];a=n[e[3]];n[t+1]=a;n[t]=a[e[2]];l=l+1;e=o[l];t=e[4]n[t]=n[t](n[t+1])l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=n[e[3]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]]*n[e[2]];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];l=e[3];end;elseif t<=84 then if t<=78 then if t<=75 then if t<=73 then n[e[4]]=a[e[3]];elseif t==74 then local l=e[4]n[l](c(n,l+1,e[3]))else if(n[e[4]]~=e[2])then l=l+1;else l=e[3];end;end;elseif t<=76 then if not n[e[4]]then l=l+1;else l=e[3];end;elseif t==77 then n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]]={};l=l+1;e=o[l];n[e[4]][e[3]]=e[2];l=l+1;e=o[l];n[e[4]][e[3]]=n[e[2]];l=l+1;e=o[l];n[e[4]][e[3]]=e[2];else n[e[4]]=e[3];end;elseif t<=81 then if t<=79 then n[e[4]]=#n[e[3]];elseif t>80 then local a;local t;t=e[4];a=n[e[3]];n[t+1]=a;n[t]=a[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];t=e[4];a=n[e[3]];n[t+1]=a;n[t]=a[e[2]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];if not n[e[4]]then l=l+1;else l=e[3];end;else n[e[4]]=W[e[3]];end;elseif t<=82 then n[e[4]]=(e[3]~=0);elseif t>83 then for e=e[4],e[3]do n[e]=nil;end;else local l=e[4]local o={n[l]()};local t=e[2];local e=0;for l=l,t do e=e+1;n[l]=o[e];end end;elseif t<=90 then if t<=87 then if t<=85 then local l=e[4];local o=n[l];for e=l+1,e[3]do X(o,n[e])end;elseif t==86 then l=e[3];else if n[e[4]]then l=l+1;else l=e[3];end;end;elseif t<=88 then n[e[4]][e[3]]=e[2];elseif t>89 then local l=e[4];local o=n[l];for e=l+1,e[3]do X(o,n[e])end;else local o=e[4];local l=n[e[3]];n[o+1]=l;n[o]=l[e[2]];end;elseif t<=93 then if t<=91 then local o=e[4];local W=e[2];local t=o+2 local o={n[o](n[o+1],n[t])};for e=1,W do n[t+e]=o[e];end;local o=o[1]if o then n[t]=o l=e[3];else l=l+1;end;elseif t>92 then if(n[e[4]]~=n[e[2]])then l=l+1;else l=e[3];end;else n[e[4]]=a[e[3]];end;elseif t<=95 then if t>94 then local O=d[e[3]];local i;local t={};i=J({},{__index=function(l,e)local e=t[e];return e[1][e[2]];end,__newindex=function(n,e,l)local e=t[e]e[1][e[2]]=l;end;});for c=1,e[2]do l=l+1;local e=o[l];if e[6]==60 then t[c-1]={n,e[3]};else t[c-1]={W,e[3]};end;E[#E+1]=t;end;n[e[4]]=f(O,i,a);else local a;local t;t=e[4];a=n[e[3]];n[t+1]=a;n[t]=a[e[2]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];n[e[4]]=#n[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]]+n[e[2]];l=l+1;e=o[l];n[e[4]]=n[e[3]]+e[2];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];n[e[4]]=#n[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]]+n[e[2]];l=l+1;e=o[l];n[e[4]]=n[e[3]]+e[2];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];t=e[4];a=n[e[3]];n[t+1]=a;n[t]=a[e[2]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];t=e[4]n[t]=n[t](c(n,t+1,e[3]))l=l+1;e=o[l];if not n[e[4]]then l=l+1;else l=e[3];end;end;elseif t==96 then n[e[4]]=(not n[e[3]]);else local c;local E;local i;local t;n[e[4]]=W[e[3]];l=l+1;e=o[l];n[e[4]]=n[e[3]][e[2]];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=e[3];l=l+1;e=o[l];n[e[4]]=(e[3]~=0);l=l+1;e=o[l];n[e[4]]=(e[3]~=0);l=l+1;e=o[l];for e=e[4],e[3]do n[e]=nil;end;l=l+1;e=o[l];n[e[4]]=a[e[3]];l=l+1;e=o[l];n[e[4]]=W[e[3]];l=l+1;e=o[l];t=e[4];i=n[e[3]];n[t+1]=i;n[t]=i[e[2]];l=l+1;e=o[l];t=e[4]E={n[t](n[t+1])};c=0;for e=t,e[2]do c=c+1;n[e]=E[c];end l=l+1;e=o[l];l=e[3];end;l=l+1;end;end;end;return c({f(d(),{},h())()})or nil;end)(tonumber,"#",16777216)
+end;
+task.spawn(C_16);
+-- StarterGui.SirhurtGUI.scriptHubFrame.topBarFrame.mainScript
+local function C_1e()
+local script = G2L["1e"];
+	local mainFrame = script.Parent.Parent;
+	local topBarFrame = script.Parent;
+	
+	do
+		local tweenService = game:GetService("TweenService");
+		local tween1 = tweenService:Create(topBarFrame.exitBtn, TweenInfo.new(0.23, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {ImageColor3 = Color3.fromRGB(265, 106, 102)});
+		local tween2 = tweenService:Create(topBarFrame.exitBtn, TweenInfo.new(0.23, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {ImageColor3 = Color3.fromRGB(255, 96, 92)});
+		
+		topBarFrame.exitBtn.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement then
+				tween1:Play();
+			end;
+		end);
+		
+		topBarFrame.exitBtn.InputEnded:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement then
+				tween2:Play();
+			end;
+		end);
+		
+		topBarFrame.exitBtn.MouseButton1Click:Connect(function()
+			mainFrame.Visible = false;
+		end);
+	end;
+	
+	do	
+		local dragger = {};
+		local mouse = game:GetService("Players").LocalPlayer:GetMouse();
+		local stepped = game:GetService("RunService").Stepped;
+		local newVector3 = Vector3.new;
+		local newUDim2 = UDim2.new;
+		dragger.new = function(obj)
+	    	spawn(function()
+	        	local minitial;
+	        	local initial;
+	        	local isdragging;
+	        	obj.topBarFrame.InputBegan:Connect(function(input)
+	            	if input.UserInputType == Enum.UserInputType.MouseButton1 then
+	                	isdragging = true;
+	                	minitial = input.Position;
+	                	initial = obj.Position;
+	                	local con;
+	                	con = stepped:Connect(function()
+	                    	if isdragging then
+	                        	local delta = newVector3(mouse.X, mouse.Y, 0) - minitial;
+	                        	obj.Position = newUDim2(initial.X.Scale, initial.X.Offset + delta.X, initial.Y.Scale, initial.Y.Offset + delta.Y);
+	                    	else
+	                        	con:Disconnect();
+	                    	end;
+	               	 	end);
+	                	input.Changed:Connect(function()
+	                    	if input.UserInputState == Enum.UserInputState.End then
+	                        	isdragging = false;
+	                    	end;
+	                	end);
+	            	end;
+	        	end);
+	    	end)
+		end;
+		
+		dragger.new(mainFrame);
+	end;
+end;
+task.spawn(C_1e);
+-- StarterGui.SirhurtGUI.scriptHubFrame.scriptList.mainScript
+local function C_26()
+local script = G2L["26"];
+	local scriptList = script.Parent;
+	local selectedFrame = scriptList.selectedFrame;
+	local runBtn = script.Parent.Parent.runBtn;
+	local scriptDescription = script.Parent.Parent.scriptDescription;
+	local clone = scriptList.scriptBtn:Clone();
+	scriptList.scriptBtn:Destroy();
+	
+	local httpService = game:GetService("HttpService");
+	local scripts = httpService:JSONDecode(game:HttpGetAsync("https://asshurthosting.pw/upl/UIScriptHub/fetch.php")).scripts;
+	local btns = {};
+	local currentBtn;
+	
+	for i, v in next, scripts do
+	    local btn = clone:Clone();
+	    btn.Parent = scriptList;
+	    btn.Text = v.Name;
+	    btns[btn] = {file = v.FileName, desc = v.Desc};
+	end;
+	
+	for i, v in next, scriptList:GetChildren() do
+		if v:IsA("TextButton") then
+	        v.MouseButton1Click:Connect(function()
+	            scriptDescription.Text = btns[v].desc;
+	            currentBtn = v;
+				selectedFrame.Parent = v;
+				selectedFrame.Visible = true;
+			end);
+		end;
+	end;
+	
+	do
+		local tweenService = game:GetService("TweenService");
+		local tween1 = tweenService:Create(runBtn, TweenInfo.new(0.23, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundTransparency = 0});
+		local tween2 = tweenService:Create(runBtn, TweenInfo.new(0.23, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundTransparency = 1});
+		
+		runBtn.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement then
+		    	tween1:Play();
+			end;
+		end);
+		
+		runBtn.InputEnded:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement then
+		    	tween2:Play();
+			end;
+		end);
+		
+		runBtn.MouseButton1Click:Connect(function()
+			if currentBtn then
+			    local script = game:HttpGetAsync("https://asshurthosting.pw/upl/UIScriptHub/Scripts/" .. btns[currentBtn].file);
+			    loadstring(script)();
+			end;
+		end);
+	end;
+end;
+task.spawn(C_26);
+
+return G2L["1"], require;
