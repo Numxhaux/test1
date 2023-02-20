@@ -1,0 +1,217 @@
+function _G.GetLidlLibrary()
+	local functions = {}
+	local title = nil
+	local folders = nil
+	local lastcreatedfolder = nil
+	local bg = nil
+	local ui = nil
+	local folderfinderindex = {}
+	local functionconnections = {}
+	function functions:CreateGui()
+		local list = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+		local lettersinname = 8
+		local screengui = Instance.new("ScreenGui")
+		screengui.ResetOnSpawn = false
+		screengui.Name = ""
+		ui = screengui
+		for i = 1, lettersinname do
+			local chosen = math.random(1, string.len(list))
+			screengui.Name = screengui.Name.. string.sub(list, chosen, chosen)
+		end
+		
+		--instance all things place
+		local ScreenGui = Instance.new("ScreenGui")
+		ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+		local Frame = Instance.new("Frame")
+		Frame.Size = UDim2.new(0.4720653, 0, 0.5461347, 0)
+		Frame.Position = UDim2.new(0.2636535, 0, 0.2269327, 0)
+		Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Frame.Parent = ScreenGui
+
+		local UICorner = Instance.new("UICorner")
+		UICorner.CornerRadius = UDim.new(0.035, 0)
+		UICorner.Parent = Frame
+
+		local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+		UIAspectRatioConstraint.Parent = UICorner
+
+		local UIGradient = Instance.new("UIGradient")
+		UIGradient.Rotation = 140
+		UIGradient.Color = ColorSequence.new(Color3.fromRGB(47, 47, 47), Color3.fromRGB(38, 38, 38))
+		UIGradient.Parent = Frame
+
+		local TitleHolder = Instance.new("Frame")
+		TitleHolder.Name = "TitleHolder"
+		TitleHolder.Size = UDim2.new(1, 0, 0.0913242, 0)
+		TitleHolder.BackgroundColor3 = Color3.fromRGB(216, 216, 216)
+		TitleHolder.Parent = Frame
+
+		local TextLabel = Instance.new("TextLabel")
+		TextLabel.Size = UDim2.new(0.4587766, 0, 0.925, 0)
+		TextLabel.BackgroundTransparency = 1
+		TextLabel.Position = UDim2.new(0.0093085, 0, 0, 0)
+		TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.FontSize = Enum.FontSize.Size14
+		TextLabel.TextStrokeTransparency = 0
+		TextLabel.TextSize = 14
+		TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.Text = "a aaaaaaaaa a v🧐"
+		TextLabel.TextWrapped = true
+		TextLabel.Font = Enum.Font.Jura
+		TextLabel.TextWrap = true
+		TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+		TextLabel.TextScaled = true
+		TextLabel.Parent = TitleHolder
+
+		local UIGradient1 = Instance.new("UIGradient")
+		UIGradient1.Rotation = 140
+		UIGradient1.Color = ColorSequence.new(Color3.fromRGB(47, 47, 47), Color3.fromRGB(38, 38, 38))
+		UIGradient1.Parent = TitleHolder
+
+		local UglyCornerFix = Instance.new("Frame")
+		UglyCornerFix.Name = "UglyCornerFix"
+		UglyCornerFix.Size = UDim2.new(1, 0, 0.15, 0)
+		UglyCornerFix.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		UglyCornerFix.Position = UDim2.new(0, 0, 0.85, 0)
+		UglyCornerFix.BorderSizePixel = 0
+		UglyCornerFix.BackgroundColor3 = Color3.fromRGB(216, 216, 216)
+		UglyCornerFix.Parent = TitleHolder
+
+		local UIGradient2 = Instance.new("UIGradient")
+		UIGradient2.Rotation = 140
+		UIGradient2.Color = ColorSequence.new(Color3.fromRGB(30, 30, 30))
+		UIGradient2.Parent = UglyCornerFix
+
+		local UICorner1 = Instance.new("UICorner")
+		UICorner1.CornerRadius = UDim.new(0.33, 0)
+		UICorner1.Parent = TitleHolder
+
+		local UIAspectRatioConstraint1 = Instance.new("UIAspectRatioConstraint")
+		UIAspectRatioConstraint1.Parent = UICorner1
+
+		local Buttons = Instance.new("Frame")
+		Buttons.Name = "Buttons"
+		Buttons.Size = UDim2.new(0, 134, 0, 398)
+		Buttons.BackgroundTransparency = 1
+		Buttons.Position = UDim2.new(0, 0, 0.0913242, 0)
+		Buttons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Buttons.Parent = Frame
+
+		local UIListLayout = Instance.new("UIListLayout")
+		UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+		UIListLayout.Parent = Buttons
+		
+		--yea
+		title = TextLabel
+		folders = Buttons
+		bg = Frame		
+		
+		return screengui
+	end
+
+	function functions:ChangeNameTitle(name)
+		if ui then
+			title.Text = name
+		end
+	end
+	
+	local foldercount = 0
+	local foldertable = {}
+	function functions:NewButtonFolder(foldername)
+		if ui then
+			local TextButton = Instance.new("TextButton")
+			TextButton.Name = tostring(foldercount + 1)
+			TextButton.Selectable = false
+			TextButton.Size = UDim2.new(1, 0, 0.076, 0)
+			TextButton.BackgroundTransparency = 1
+			TextButton.Active = false
+			TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			TextButton.FontSize = Enum.FontSize.Size14
+			TextButton.TextStrokeTransparency = 0
+			TextButton.TextSize = 14
+			TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+			TextButton.Text = foldername
+			TextButton.TextWrapped = true
+			TextButton.Font = Enum.Font.Jura
+			TextButton.TextWrap = true
+			TextButton.TextXAlignment = Enum.TextXAlignment.Left
+			TextButton.TextScaled = true
+			TextButton.Parent = folders
+			
+			local OpenFrame = Instance.new("Frame")
+			OpenFrame.Name = "FolderOf".. foldername
+			OpenFrame.Visible = false
+			OpenFrame.Size = UDim2.new(0, 592, 0, 375)
+			OpenFrame.BackgroundTransparency = 0.1
+			OpenFrame.Position = UDim2.new(0.1914894, 0, 0.1050228, 0)
+			OpenFrame.BackgroundColor3 = Color3.fromRGB(216, 216, 216)
+			OpenFrame.Parent = bg
+			
+			local TextLabel1 = Instance.new("TextLabel")
+			TextLabel1.Size = UDim2.new(0.9999999, 0, 0.076, 0)
+			TextLabel1.BackgroundTransparency = 1
+			TextLabel1.Position = UDim2.new(0, 0, 0, 0)
+			TextLabel1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			TextLabel1.FontSize = Enum.FontSize.Size14
+			TextLabel1.TextStrokeTransparency = 0
+			TextLabel1.TextSize = 14
+			TextLabel1.TextColor3 = Color3.fromRGB(255, 255, 255)
+			TextLabel1.Text = foldername.. "'s Frame"
+			TextLabel1.TextWrapped = true
+			TextLabel1.Font = Enum.Font.Jura
+			TextLabel1.TextWrap = true
+			TextLabel1.TextScaled = true
+			TextLabel1.Parent = OpenFrame
+
+			local UICorner2 = Instance.new("UICorner")
+			UICorner2.CornerRadius = UDim.new(0.04, 0)
+			UICorner2.Parent = OpenFrame
+
+			local UIAspectRatioConstraint2 = Instance.new("UIAspectRatioConstraint")
+			UIAspectRatioConstraint2.Parent = UICorner2
+
+			local UIGradient3 = Instance.new("UIGradient")
+			UIGradient3.Rotation = 140
+			UIGradient3.Color = ColorSequence.new(Color3.fromRGB(30, 30, 30))
+			UIGradient3.Parent = OpenFrame
+			
+			foldercount = foldercount + 1
+			lastcreatedfolder = tostring(OpenFrame)
+			
+			folderfinderindex[tostring(OpenFrame)] = OpenFrame
+			
+			local connect = TextButton.MouseButton1Up:Connect(function()
+				for i, v in pairs(folderfinderindex) do
+					if v ~= OpenFrame then
+						v.Visible = false
+					end
+				end
+				OpenFrame.Visible = true
+			end)
+			table.insert(functionconnections, connect)
+		end
+	end
+	
+	function functions:NewButton(folder)
+		if ui then
+			if tostring(folder) == nil then
+				folder = lastcreatedfolder
+			end
+			
+		end
+	end
+
+	function functions:Ready(ui)
+		if ui then
+			local s,e = pcall(function()
+
+			end)
+			if e then warn("LidlLib: SYN PROTECT FAILURE, ".. e) end
+			ui.Parent = game:GetService("CoreGui")
+			return ui
+		end
+	end
+
+	return functions
+end
