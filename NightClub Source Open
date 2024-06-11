@@ -208,10 +208,6 @@ NightClub.Keywords = { -- Keyword string matching for code editor.
     ["readfile"] = {NightClub.EditorColors.Word, "[.]*", "[%p]"},
 }
 
-for i,v in next, NightClub.env do
-    assert(v, "Your exploit does not support NightClub's Spy Tool :(")
-end
-
 repeat 
     wait()
 until game:IsLoaded();
