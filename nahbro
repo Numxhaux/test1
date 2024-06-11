@@ -205,7 +205,7 @@ function nurysium: init(name: string, is_draggable: boolean, parent)
 	girl.BorderSizePixel = 0
 	girl.Position = UDim2.new(0.730189502, 0, 0.475565195, 0)
 	girl.Size = UDim2.new(0.269810468, 0, 0.524434745, 0)
-	girl.Image = "rbxassetid://17816673270"
+	girl.Image = "rbxassetid://17816673246"
 
 	girl_UIGradient.Rotation = -74
 	girl_UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.17, 0.80), NumberSequenceKeypoint.new(0.34, 0.47), NumberSequenceKeypoint.new(0.43, 0.00), NumberSequenceKeypoint.new(0.50, 0.00), NumberSequenceKeypoint.new(0.68, 0.00), NumberSequenceKeypoint.new(0.90, 0.97), NumberSequenceKeypoint.new(1.00, 1.00)}
